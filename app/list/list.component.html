@@ -1,0 +1,10 @@
+
+
+<div id="productlist">
+	<table><tr><th>Title</th><th>Price</th><th>ImageUrl</th><th>Action</th>
+	<tr *ngFor='let x of allproducts, let y = index'>
+		<td><a [routerLink]="['/edit', x.id]">{{x.title}}</a></td><td>{{x.price}}</td><td>{{x.imageUrl}}</td><td><a [routerLink]="['/delete', x.id]">Delete</a></td>
+	</tr>
+	
+	</table>
+</div>

@@ -1,0 +1,11 @@
+<h2> Edit Product </h2>
+{{ product | json}}
+<p>Title:
+	<input type="text" [(ngModel)]='title' minlength="2">{{ title | json}}</p>
+<p>Price:
+	<input type="text" [(ngModel)]='price'>{{ price | json}}
+</p>
+<p>Image Url:
+	<input type="text" [(ngModel)]='imageUrl'>{{ imageUrl | json}}
+</p>
+<button (click)="onsubmit()">Submit Product</button>
